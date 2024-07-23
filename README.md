@@ -1,1 +1,5 @@
-# linux_config_files
+# dotfiles
+
+* hyprland
+* waybar
+* wofi
