@@ -1,0 +1,86 @@
+/* Global Window Style */
+window {
+    margin: 0px;
+    border: 2px solid #cba6f7;
+    /* Lavender/Purple accent */
+    background-color: rgba(30, 30, 46, 0.9);
+    border-radius: 16px;
+    font-family: "JetBrains Mono", "Inter", sans-serif;
+    font-size: 16px;
+    /* Glow effect */
+    box-shadow: 0 0 20px rgba(203, 166, 247, 0.4);
+}
+
+/* Search Bar */
+#input {
+    margin: 10px;
+    border: none;
+    background-color: #313244;
+    color: #cdd6f4;
+    border-radius: 100px;
+    /* Pill shape */
+    padding: 12px 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#input:focus {
+    border: 2px solid #cba6f7;
+    box-shadow: 0 0 10px rgba(203, 166, 247, 0.2);
+    outline: none;
+}
+
+/* Inner Container */
+#inner-box {
+    margin: 10px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 0px;
+    background-color: transparent;
+}
+
+/* Scroll Area */
+#scroll {
+    margin: 0px;
+    border: none;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+/* Text Styling */
+#text {
+    margin: 5px;
+    color: #cdd6f4;
+    /* Force truncation with ellipsis */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Important for ellipsis to trigger */
+    display: block;
+    max-width: 100%;
+}
+
+/* Entry Styling */
+#entry {
+    padding: 10px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Selected Entry */
+#entry:selected {
+    background: linear-gradient(90deg, #cba6f7 0%, #89b4fa 100%);
+    /* Gradient selection */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#entry:selected #text {
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 10px;
+}

@@ -1,0 +1,128 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    /* font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; */
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    /* background: rgba(30, 30, 46, 0.5); */
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces button {
+    padding: 3px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6e3a1;
+}
+
+#workspaces button.focused {
+    color: #a6e3a1;
+    background: #eba0ac;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 5px;
+}
+
+#window,
+#workspaces,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+    color: #cdd6f4;
+    border-radius: 15px;
+    background: #1e1e2e;
+    opacity: 0.8;
+    margin: 2px 2px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+}
+
+#window {
+    background-color: transparent;
+}
+
+#clock {
+    color: #cba6f7;
+    /* background-color: #1e1e2e; */
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #a6e3a1;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #bf5656;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #bf5656;
+        color: #f38ba8;
+    }
+}
+
+#cpu {
+    color: #89b4fa;
+}
+
+#memory {
+    color: #f9e2af;
+}
+
+#pulseaudio {
+    color: #fab387;
+}
+
+#pulseaudio.muted {
+    color: #a6adc8;
+}
+
+#tray {
+    background-color: #1e1e2e;
+}

@@ -1,0 +1,15 @@
+mode=drun
+show=drun
+width=500
+height=350
+location=center
+no_actions=true
+prompt=Search Apps...
+filter_rate=100
+allow_images=true
+image_size=28
+insensitive=true
+gtk_dark=true
+layer=overlay
+line_wrap=word_char
+allow_markup=true
